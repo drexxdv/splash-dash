@@ -12,9 +12,9 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
-app.get('/favicon.ico', (req, res) => {
-  res.render('favicon.ico')
-})
+app.get('/api/servers', (req, res) => {
+  res.render('servers')
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
