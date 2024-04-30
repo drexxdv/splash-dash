@@ -16,7 +16,7 @@ const { GatewayIntentBits, Client } = require('discord.js');
 
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 
-app.get('/api/servers', (req, res) => {
+app.get('/api/servers', async (req, res) => {
   try {
 await client.login('MTIyMDA0NTUxNDY0MTM3NTIzMg.GVBIwZ.l0i-tWyuDLMOcoJ8w_QrImgg2YvbEhRbr9Thes');
 const guilds = await client.guilds.fetch();
