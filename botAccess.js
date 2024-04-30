@@ -6,10 +6,4 @@ const client = new Client({
   ]
 });
 
-client.on(Events.MessageCreate, async msg => {
-  if (msg.content.includes("vercel")){
-    msg.reply("hmm")
-  }
-});
-
 client.login('MTIyMDA0NTUxNDY0MTM3NTIzMg.GVBIwZ.l0i-tWyuDLMOcoJ8w_QrImgg2YvbEhRbr9Thes')
