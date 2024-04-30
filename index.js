@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+app.get('/favicon.ico', (req, res) => {
+  res.render('favicon.ico')
+})
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`La aplicación está escuchando en el puerto ${port}`);
