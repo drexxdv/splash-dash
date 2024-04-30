@@ -7,7 +7,7 @@ const client = new Client({
 });
 
 client.on(Events.MessageCreate, async msg => {
-  if (msg.content === "vercel"){
+  if (msg.content.includes("vercel")){
     msg.reply("hmm")
   }
 });
