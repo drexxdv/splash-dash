@@ -1,41 +1,42 @@
 <html lang="en">
-  <head>
-    <title>Splash Dashboard - Home</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/buttons.css" type="text/css">
-  </head>
-  <body>
-    <header>
-     <h2>Splash</h2> <a href="https://discord.com/oauth2/authorize?client_id=1220045514641375232" class="button">Invite</a>
-    </header>
-    <div class="init">
-     <h1>Splash</h1>
-    </div>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
-     html{
-      font-family: Montserrat;
-      background-color: #000;
-      color: #ffffff;
-     }
-     .init{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 50vh; /* O el alto que desees para tu contenedor padre */
-     }
-     .button {
-    padding: 10px 20px;
-    background-color: black;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: #8461ed 0.3s ease;
+<head>
+<title>Splash Dashboard - Home</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="<%= /var/task %>/css/buttons.css" type="text/css">
+</head>
+<body>
+<header>
+<h2>Splash</h2> <a href="https://discord.com/oauth2/authorize?client_id=1220045514641375232" class="button">Invite</a>
+</header>
+<div class="init">
+<h1>Splash</h1>
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+html{
+font-family: Montserrat;
+background-color: #000;
+color: #ffffff;
+}
+.init{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh; /* O el alto que desees para tu contenedor padre */
+}
+.button {
+padding: 10px 20px;
+background-color: black;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #7c61cd;
+.button:hover {
+background-color: #7c61cd;
 }
-
-    </style>
-  </body>
+</style>
+</body>
 </html>
