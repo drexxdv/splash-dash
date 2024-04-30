@@ -22,7 +22,7 @@ await client.login('MTIyMDA0NTUxNDY0MTM3NTIzMg.GVBIwZ.l0i-tWyuDLMOcoJ8w_QrImgg2Y
 const guilds = await client.guilds.fetch();
 const servers = guilds.map(guild => ({
 id: guild.id,
-name:.guild.name,
+name: guild.name,
 }));
 res.json(servers);
 } catch (error) {
