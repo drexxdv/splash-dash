@@ -1,70 +1,56 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Splash Dashboard - Home</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      font-family: Montserrat;
-      background-color: #000;
-      color: #ffffff;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #000;
-      color: #ffffff;
-    }
-    header h2 {
-      font-size: 24px;
-      margin-right: 20px;
-    }
-   .button {
-      padding: 10px 20px;
-      background-color: black;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-   .button:hover {
-      background-color: #7c61cd;
-    }
-   .init {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      background-color: #000;
-      color: #ffffff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Dashboard - Home</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Poppins;
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .logo {
+            font-weight: 700;
+            font-size: 36px;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+       .button {
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+       .button:hover {
+            background-color: #3498db;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h2>Splash</h2>
-    <a href="https://discord.com/oauth2/authorize?client_id=1220045514641375232" class="button">Invite</a>
-  </header>
-  <div class="init">
-    <h1>Splash</h1>
-  </div>
+    <div class="container">
+        <h1 class="logo">Splash</h1>
+        <p>Welcome to Splash Dashboard!</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1220045514641375232" class="button">Invite</a>
+    </div>
 </body>
 </html>
