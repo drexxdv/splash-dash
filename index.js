@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+app.get('/commands', (req, res) => { res.render('commands'); });
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`La aplicación está escuchando en el puerto ${port}`);
