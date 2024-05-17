@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   res.render('home');
 });
-
 app.get('/commands', (req, res) => { res.render('commands'); });
+app.get('/coming-soon', (req, res) => { res.send('This thing is coming soon lol') })
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
