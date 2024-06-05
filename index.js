@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 app.get('/commands', (req, res) => { res.render('commands'); });
 app.get('/coming-soon', (req, res) => { res.send('This thing is coming soon lol') });
-app.get('/bot-private-info.json', (req, res) => { res.send('<img src="https://tenor.com/view/rickroll-roll-rick-never-gonna-give-you-up-never-gonna-gif-22954713" alt="reload the page">') })
+app.get('/bot-private-info.json', (req, res) => { res.send('<img src="https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif" alt="reload the page">') })
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
